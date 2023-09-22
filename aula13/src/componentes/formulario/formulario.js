@@ -8,6 +8,12 @@ function enviar(){
     let formu = 'cadastro no nome de '+ document.querySelector('.nome').value+ ' cujo cpf é '+ document.querySelector('.cpf').value+ ' nascido em '+ document.querySelector('.data').value
 
     texto.innerHTML = formu
+    let list = document.querySelectorAll('.form input')
+    console.log(list[0])
+    for(let i = 0; i < list.length; i++){
+      list[i].value = ''
+    }
+    
 }
 
 function formulario(){
